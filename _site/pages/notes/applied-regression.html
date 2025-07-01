@@ -90,15 +90,65 @@
       
       
     </div>
-    <h3 class="no_toc" id="table-of-contents">Table of Contents</h3>
-<ul id="markdown-toc">
-  <li><a href="#conditional-expectation-function" id="markdown-toc-conditional-expectation-function">Conditional Expectation Function</a></li>
-  <li><a href="#linear-regression" id="markdown-toc-linear-regression">Linear Regression</a></li>
-  <li><a href="#independence-mean-independence-uncorrelatedness" id="markdown-toc-independence-mean-independence-uncorrelatedness">Independence, Mean independence, Uncorrelatedness</a></li>
-  <li><a href="#finite-samples" id="markdown-toc-finite-samples">Finite Samples</a></li>
-  <li><a href="#causal-inference" id="markdown-toc-causal-inference">Causal inference</a></li>
-  <li><a href="#penalized-regression" id="markdown-toc-penalized-regression">Penalized Regression</a></li>
-</ul>
+    <p><button id="toc-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button></p>
+<ol id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>    <ol>
+      <li><a href="#conditional-expectation-function" id="markdown-toc-conditional-expectation-function">Conditional Expectation Function</a></li>
+      <li><a href="#linear-regression" id="markdown-toc-linear-regression">Linear Regression</a>        <ol>
+          <li><a href="#best-mse-predictors" id="markdown-toc-best-mse-predictors">Best MSE predictors</a>            <ol>
+              <li><a href="#cef-decomposition-property-for-all-cefs" id="markdown-toc-cef-decomposition-property-for-all-cefs">CEF decomposition property (for all CEFs)</a></li>
+              <li><a href="#anova-theorem-law-of-total-variance" id="markdown-toc-anova-theorem-law-of-total-variance">ANOVA theorem (law of total variance)</a></li>
+            </ol>
+          </li>
+          <li><a href="#best-linear-predictors" id="markdown-toc-best-linear-predictors">Best linear predictors</a>            <ol>
+              <li><a href="#linear-decomposition-principle" id="markdown-toc-linear-decomposition-principle">Linear decomposition principle</a></li>
+              <li><a href="#cef-and-lr" id="markdown-toc-cef-and-lr">CEF and LR</a></li>
+            </ol>
+          </li>
+          <li><a href="#further-decomposition-of-cef-and-lr" id="markdown-toc-further-decomposition-of-cef-and-lr">Further decomposition of CEF and LR</a></li>
+          <li><a href="#special-cases-of-regression" id="markdown-toc-special-cases-of-regression">Special cases of regression</a>            <ol>
+              <li><a href="#binary-x-and-y" id="markdown-toc-binary-x-and-y">Binary X and Y</a></li>
+              <li><a href="#bivariate-gaussian" id="markdown-toc-bivariate-gaussian">Bivariate Gaussian</a></li>
+            </ol>
+          </li>
+          <li><a href="#multivariate-regression" id="markdown-toc-multivariate-regression">Multivariate Regression</a>            <ol>
+              <li><a href="#theory" id="markdown-toc-theory">Theory</a></li>
+              <li><a href="#special-case-saturated-regression" id="markdown-toc-special-case-saturated-regression">Special case: Saturated regression</a></li>
+              <li><a href="#special-case-polynomial-regression" id="markdown-toc-special-case-polynomial-regression">Special case: Polynomial Regression</a></li>
+            </ol>
+          </li>
+          <li><a href="#fwl-theorem-regression-anatomy" id="markdown-toc-fwl-theorem-regression-anatomy">FWL Theorem (Regression anatomy)</a></li>
+          <li><a href="#omitted-variable-bias" id="markdown-toc-omitted-variable-bias">Omitted Variable Bias</a></li>
+          <li><a href="#partial-r2" id="markdown-toc-partial-r2">Partial \(R^2\)</a>            <ol>
+              <li><a href="#omitted-variable-bias-z-with-partial-r2-parametrization" id="markdown-toc-omitted-variable-bias-z-with-partial-r2-parametrization">Omitted variable bias (\(Z\)) with partial \(R^2\) parametrization</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#independence-mean-independence-uncorrelatedness" id="markdown-toc-independence-mean-independence-uncorrelatedness">Independence, Mean independence, Uncorrelatedness</a></li>
+      <li><a href="#finite-samples" id="markdown-toc-finite-samples">Finite Samples</a>        <ol>
+          <li><a href="#estimation" id="markdown-toc-estimation">Estimation</a></li>
+          <li><a href="#plug-in-principle" id="markdown-toc-plug-in-principle">Plug-in Principle</a>            <ol>
+              <li><a href="#bias" id="markdown-toc-bias">Bias</a></li>
+            </ol>
+          </li>
+          <li><a href="#nonparametric-bootstrap" id="markdown-toc-nonparametric-bootstrap">Nonparametric bootstrap</a></li>
+        </ol>
+      </li>
+      <li><a href="#causal-inference" id="markdown-toc-causal-inference">Causal inference</a>        <ol>
+          <li><a href="#good-and-bad-controls" id="markdown-toc-good-and-bad-controls">Good and bad controls</a></li>
+        </ol>
+      </li>
+      <li><a href="#penalized-regression" id="markdown-toc-penalized-regression">Penalized Regression</a>        <ol>
+          <li><a href="#lasso-regression" id="markdown-toc-lasso-regression">Lasso regression</a></li>
+          <li><a href="#ridge-regression" id="markdown-toc-ridge-regression">Ridge regression</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<h3 class="no_toc" id="table-of-contents">Table of Contents</h3>
 
 <h2 id="introduction">Introduction</h2>
 
@@ -307,9 +357,7 @@
     <p>\(Var(Y\vert X)\) is not constant</p>
 
     <ul>
-      <li>
-\[Var[Y\vert X]=P(Y=1\vert X)[1-P(Y=1\vert X)]\]
-      </li>
+      <li>$Var[Y\vert X]=P(Y=1\vert X)[1-P(Y=1\vert X)]$</li>
     </ul>
   </li>
   <li>
@@ -1588,7 +1636,23 @@ R doc</li>
   ga('send', 'pageview');
 
 </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById('toc-toggle');
+    const tocBox = document.getElementById('markdown-toc');
 
+    toggleBtn.addEventListener('click', function () {
+      if (tocBox.style.display === 'block') {
+        tocBox.style.display = 'none';
+      } else {
+        tocBox.style.display = 'block';
+      }
+    });
+    tocBox.addEventListener('mouseleave', function () {
+      tocBox.style.display = 'none';
+    });
+  });
+  </script>
   <!-- do not remove -->
   <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
 

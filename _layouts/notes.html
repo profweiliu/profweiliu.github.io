@@ -126,7 +126,23 @@
 
   <!-- Google Analytics -->
   {% include google_analytics.html %}
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById('toc-toggle');
+    const tocBox = document.getElementById('markdown-toc');
 
+    toggleBtn.addEventListener('click', function () {
+      if (tocBox.style.display === 'block') {
+        tocBox.style.display = 'none';
+      } else {
+        tocBox.style.display = 'block';
+      }
+    });
+    tocBox.addEventListener('mouseleave', function () {
+      tocBox.style.display = 'none';
+    });
+  });
+  </script>
   <!-- do not remove -->
   <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
 

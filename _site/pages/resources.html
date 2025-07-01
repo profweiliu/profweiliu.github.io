@@ -68,6 +68,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+  <script src="https://climateclock.world/widget-v2.js" async></script>
+
 </head>
 <body>
 
@@ -160,7 +162,14 @@
     </div>
   
 
-  <h4 id="seminar">Seminar</h4>
+  <p><button id="toc-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button></p>
+<ol id="markdown-toc">
+  <li><a href="#seminar" id="markdown-toc-seminar">Seminar</a></li>
+  <li><a href="#resources-by-urban-topics" id="markdown-toc-resources-by-urban-topics">Resources by Urban Topics</a></li>
+  <li><a href="#computing-and-software" id="markdown-toc-computing-and-software">Computing and Software</a></li>
+</ol>
+
+<h4 id="seminar">Seminar</h4>
 
 <p>Actively attending seminars is an important part of PhD life. UW and its various colleges/departments have a long list of regular seminars related to urban design &amp; planning. However, do not spend too much time on such diverse possibilities.</p>
 
@@ -314,12 +323,12 @@
         -->
         <div class="four columns">
           <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span> visitors</span>
+          <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span> visitors</span>
         </div>
 
       </div>
     </div>
-
+    
   </div>
 
   <!-- Google Analytics -->
@@ -347,6 +356,24 @@
   <!-- do not remove -->
   <!--<span id="62cd7b7da1aff3196fdc26b60e396df9"></span>-->
 
+  <climate-clock />
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById('toc-toggle');
+    const tocBox = document.getElementById('markdown-toc');
+
+    toggleBtn.addEventListener('click', function () {
+      if (tocBox.style.display === 'block') {
+        tocBox.style.display = 'none';
+      } else {
+        tocBox.style.display = 'block';
+      }
+    });
+    tocBox.addEventListener('mouseleave', function () {
+      tocBox.style.display = 'none';
+    });
+  });
+  </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

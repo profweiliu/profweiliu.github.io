@@ -68,6 +68,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+  <script src="https://climateclock.world/widget-v2.js" async></script>
+
 </head>
 <body>
 
@@ -180,12 +182,12 @@
         -->
         <div class="four columns">
           <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span> visitors</span>
+          <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span> visitors</span>
         </div>
 
       </div>
     </div>
-
+    
   </div>
 
   <!-- Google Analytics -->
@@ -204,6 +206,24 @@
   <!-- do not remove -->
   <!--<span id="62cd7b7da1aff3196fdc26b60e396df9"></span>-->
 
+  <climate-clock />
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById('toc-toggle');
+    const tocBox = document.getElementById('markdown-toc');
+
+    toggleBtn.addEventListener('click', function () {
+      if (tocBox.style.display === 'block') {
+        tocBox.style.display = 'none';
+      } else {
+        tocBox.style.display = 'block';
+      }
+    });
+    tocBox.addEventListener('mouseleave', function () {
+      tocBox.style.display = 'none';
+    });
+  });
+  </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

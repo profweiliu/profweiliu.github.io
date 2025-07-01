@@ -3,6 +3,9 @@ layout: project
 title: Resources
 subtitle: The Combination of Urban Design and Planning Resources at the University of Washington.
 ---
+<button id="toc-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+1. TOC
+{:toc}
 
 #### Seminar
 

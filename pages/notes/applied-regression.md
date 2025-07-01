@@ -4,11 +4,13 @@ title: Applied Linear Regression
 subtitle: Selected Notes from STAT 504 + CSE 546, University of Washington
 ---
 
+<button id="toc-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+1. TOC
+{:toc}
+
 ### Table of Contents
 {:.no_toc}
-* TOC 
-{:toc}
-{::options toc_levels="3" /}
+
 
 ## Introduction
 
@@ -143,7 +145,7 @@ For prerequite knowledge on probability and linear algebra, please refer to sepr
 
 - $$Var(Y\vert X)$$ is not constant
 
-  - $$Var[Y\vert X]=P(Y=1\vert X)[1-P(Y=1\vert X)]$$ 
+  - $Var[Y\vert X]=P(Y=1\vert X)[1-P(Y=1\vert X)]$
 
 - We can generalize it to multiple categorical variablaes which is [[#Saturated regression]].
 
