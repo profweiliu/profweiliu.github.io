@@ -1,28 +1,18 @@
 ---
 layout: project
 title: Graduate Coursework List
-subtitle: The Combination of Urban Planning, Policy, Climate, Energy, Statistics, Data Science, and AI + Society Course at the University of Washington.
+subtitle: A Combination of Urban Planning, Policy, Climate, Energy, Statistics, Data Science, and AI + Society Course at the University of Washington.
 ---
 
 <button id="toc-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
 1. TOC
 {:toc}
 
-We suggest, as doctoral students, taking whatever courses you are interested in with an objective beyond GPA. Ultimately, your time in graduate school will be assessed not by your grades but by your research performance and impact. You could explore some course registration strategies: 
-
-**Audit a class:** a wise way to attend without commitment ([instruction](https://registrar.washington.edu/registration/policies-procedures/)).
-
-**Grade options**: a great option (C/NC) if you'd like to attend some hard classes.
-
-**Time conflicts**: send an email to the registration office if the conflict is less than an hour per week ([instruction](https://registrar.washington.edu/registration/policies-procedures/)), need professors' permission if the conflict is more than one hour per week.
-
-**Register for other-major-only courses** See their own website or ask the instructors. For example, Allen School (CSE) requires students to complete the petition for both undergraduate and graduate level classes ([instruction](https://www.cs.washington.edu/students/ugrad/non-major-registration)).
-
-**Where can I find the syllabus?** Google it with codes and names. All URBAN course syllabi can be found [here](https://urbdp.be.uw.edu/programs/mup-graduate-degree/udp-course-listings-and-syllabi/).
-
 #### Planning, Policy, and Institutions
 
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> URBAN 561 Urban Economics and Public Policy 
+  - jdwei
+
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> [URBAN 591 Research Design in Urban Science](https://researchdesign.be.uw.edu)
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> [URBAN 592 Advanced Planning Theory](https://home.foreveroverhead.cloud/udp592_syllabus.pdf)
 - [POL S 582 Institutional Analysis](http://faculty.washington.edu/swhiting/582spr17syl1a.pdf) 

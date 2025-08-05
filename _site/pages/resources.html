@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Resources | Haoyu Yue</title>
+  <meta name="description" content="Haoyu Yue">
+  <meta name="author" content="Haoyu Yue">
+  <meta property="og:title" content="Haoyu Yue" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://yohaoyu.github.io" />
+  <meta property="og:site_name" content="Haoyu Yue" />
+  <link rel="canonical" href="http://yohaoyu.github.io" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Marcellus&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP&family=Roboto+Slab:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/linux-biolinum" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+
+                
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/skeleton/normalize.css>
+  <link rel="stylesheet" href=/libs/external/skeleton/skeleton.css>
+  <link rel="stylesheet" href=/libs/custom/my_css.css>
+
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src=/libs/external/jquery-3.1.1.min.js></script>
+
+  <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
+
+  <!-- Academicons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/academicons-1.8.6/css/academicons.min.css>
+
+  <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/skeleton_tabs/skeleton-tabs.css>
+  <script src=/libs/external/skeleton_tabs/skeleton-tabs.js></script>
+
+  <!-- Timeline
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/timeline.css>
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="stylesheet" href=/libs/external/github-prettify-theme.css>-->
+  <script src=/libs/custom/my_js.js></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href=/libs/icon.png>
+  <link rel="shortcut icon" type="image/png" href=/libs/icon.png>
+
+  <!-- Latex
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <script src="https://climateclock.world/widget-v2.js" async></script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <section class="header">
+      <div class="row">
+        <div class="three columns">
+          <a href="/">
+            <img id="profile-pic" class="u-max-full-width" src="" alt="Profile picture">
+          </a>
+          
+
+          <script>
+            const pics = [
+              { src: '/assets/profile-pics/photo1.jpg', weight: 10 },
+              { src: '/assets/profile-pics/photo2.png', weight: 8 },
+              { src: '/assets/profile-pics/photo3.jpg', weight: 0.1 },
+              { src: '/assets/profile-pics/photo4.jpg', weight: 0.1 },
+              { src: '/assets/profile-pics/photo5.jpg', weight: 5 }            ];
+          
+            function weightedRandom(pics) {
+              const totalWeight = pics.reduce((sum, pic) => sum + pic.weight, 0);
+              const rand = Math.random() * totalWeight;
+              let cumulative = 0;
+              for (let i = 0; i < pics.length; i++) {
+                cumulative += pics[i].weight;
+                if (rand < cumulative) return pics[i].src;
+              }
+            }
+          
+            document.getElementById('profile-pic').src = weightedRandom(pics);
+          </script>
+
+          <!--<a href="/"><img class="u-max-full-width" src='/assets/profile-pics/photo.jpg'></a>-->
+        </div>
+        <div class="nine columns main-description">  
+            <!--<h2 style="display: inline-block; font-family: 'Noto Serif SC','WenQuanYi Zen Hei', 'serif';font-size: 25px; font-weight: 600;margin-bottom: 4px;"  > <span>岳皓宇</span></h2>-->
+            <h1 style="display: inline-block; font-weight: 400; font-size: 30px; margin-bottom: 6px; letter-spacing: -.03rem" >HAOYU YUE</h1> 
+            <p style="font-size: 16px;">Ph.D. Student in Urban Design and Planning, University of Washington</p>
+            <p style="font-size: 16px;margin-bottom: 3px;">yohaoyu [at] washington.edu</p>
+            <p>
+              <span onclick="window.open('https://twitter.com/HaoyuAtCities')" style="cursor: pointer">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://www.linkedin.com/in/yohaoyu')" style="cursor: pointer">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://github.com/yohaoyu')" style="cursor: pointer">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/AcZssZ2EtqybbA68awqzWkk53rxGxuiNCS0W4pbkZdc=?gv=true')" style="cursor: pointer">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+              </span>
+
+              <!--<span onclick="window.open('https://scholar.google.com/citations?user=jfr_teoAAAAJ&hl=zh-CN')" style="cursor: pointer">
+                <i class="ai ai-google-scholar ai-lg" aria-hidden="true">
+              </span></i>-->
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href=/index.html>Home</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#bio>Bio</a></li>
+          <!--<li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Publications</a></li>-->
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#news>News</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#projects>Projects</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#teaching>Teaching</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#resume>Vita</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="docs-section">
+
+  
+    <div class="title-subtitle">
+      <h2>Resources</h2>
+      <h5>The Combination of Urban Design and Planning Resources at the University of Washington.</h5>
+    </div>
+  
+
+  <p><button id="toc-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button></p>
+<ol id="markdown-toc">
+  <li><a href="#seminar" id="markdown-toc-seminar">Seminar</a></li>
+  <li><a href="#resources-by-urban-topics" id="markdown-toc-resources-by-urban-topics">Resources by Urban Topics</a></li>
+  <li><a href="#computing-and-software" id="markdown-toc-computing-and-software">Computing and Software</a></li>
+</ol>
+
+<h4 id="seminar">Seminar</h4>
+
+<p>Actively attending seminars is an important part of PhD life. UW and its various colleges/departments have a long list of regular seminars related to urban design &amp; planning. However, do not spend too much time on such diverse possibilities.</p>
+
+<ul>
+  <li><a href="https://sites.uw.edu/urbdpphd/news-events/research-seminar/">Urban Design &amp; Planning Bi-weekly Research Seminar</a></li>
+  <li><a href="https://sites.uw.edu/urbdpphd/news-events/student-colloquium-urbdp-598/">Urban Design &amp; Planning Ph.D. Student Colloquium</a></li>
+  <li><a href="https://csss.uw.edu/seminars">Statistics and Social Science (CS&amp;SS) Seminar</a></li>
+  <li><a href="https://escience.washington.edu/connect/events/uwdss/">UW eScience Data Science Seminar</a></li>
+  <li><a href="https://csde.washington.edu/newsevents/seminar-series/">Demography and Ecology (CSDE) Seminar Series</a></li>
+  <li><a href="https://dub.uw.edu/seminar.html">Human-Computer Interaction &amp; Design (DUB) Seminar</a></li>
+  <li><a href="https://www.raise.uw.edu/talksevents/">Responsibility in AI Systems and Experiences (RAISE) Seminar</a></li>
+  <li><a href="https://change.washington.edu/event/">Change Seminar (Technology for Social Change)</a></li>
+  <li><a href="https://cs4env.uw.edu/">Computing for the Environment Seminar</a></li>
+  <li><a href="https://www.cei.washington.edu/events/seminars/">Clean Energy Seminar</a></li>
+  <li><a href="https://econ.washington.edu/joint-seminar-development-economics-series">Joint Seminar in Development Economics Series</a></li>
+  <li><a href="https://envirpol.org/colloquia/">Duck Family Environmental Politics Colloquium</a></li>
+  <li><a href="https://pcc.uw.edu/pcc-seminar/">PCC Current Research In Climate Science Seminar</a></li>
+  <li><a href="https://www.cs.washington.edu/news/distinguished_lecturer_series">Distinguished Lecture Series Computer Science &amp; Engineering</a></li>
+  <li><a href="https://geography.washington.edu/geography-colloquium">Geography Colloquium</a></li>
+  <li><a href="https://stat.uw.edu/seminars/department-seminars">Department of Statistics Seminars</a></li>
+  <li><a href="https://ise.washington.edu/students/seminars/INDE593">Graduate Seminars - Industrial &amp; Systems Engineering</a></li>
+</ul>
+
+<h4 id="resources-by-urban-topics">Resources by Urban Topics</h4>
+
+<ul>
+  <li>Urban Ecology
+    <ul>
+      <li><a href="https://cs4env.uw.edu/">Computing for the Environment</a></li>
+    </ul>
+  </li>
+  <li>Health and Wellbeing
+    <ul>
+      <li><a href="https://csde.washington.edu/">Center for Studies in Demography &amp; Ecology</a></li>
+      <li><a href="https://deohs.washington.edu/change/students-training">Certificate in Climate and Health</a></li>
+    </ul>
+  </li>
+  <li>Climate Change and Actions
+    <ul>
+      <li><a href="https://cs4env.uw.edu/">Computing for the Environment</a></li>
+      <li><a href="https://pcc.uw.edu/education/graduate-certificate/">Certificate in Climate Science</a></li>
+      <li><a href="https://www.cei.washington.edu/education/uw-graduate-students/graduate-certificate-in-clean-energy/">Certificate in Clean Energy Science, Engineering, and Society</a></li>
+      <li><a href="https://deohs.washington.edu/change/students-training">Certificate in Climate and Health</a></li>
+    </ul>
+  </li>
+  <li>Urban and Community Development
+    <ul>
+      <li><a href="https://csde.washington.edu/training/demographic-certificate/">Certificate in Demographic Methods</a></li>
+      <li><a href="http://evans.uw.edu/academic-programs/graduate-certificate-programs/international-development-certificate/">Certificate in International Development Policy and Management</a></li>
+      <li><a href="https://jsis.washington.edu/programs/qual/programs/qual-requirements/">Concentration in Qualitative Methods</a></li>
+    </ul>
+  </li>
+  <li>Transportation
+    <ul>
+      <li><a href="http://depts.washington.edu/pactrans/">PacTrans</a></li>
+    </ul>
+  </li>
+  <li>Data Science and Urban Informatics
+    <ul>
+      <li><a href="https://escience.washington.edu/">eScience Institute</a></li>
+      <li><a href="https://csss.uw.edu/">Center for Statistics and the Social Science (CS&amp;SS)</a></li>
+      <li><a href="https://change.washington.edu/">Change (Technology for Social Goods)</a></li>
+      <li><a href="https://dub.washington.edu/">Design Use Build (DUB)</a></li>
+      <li><a href="https://cs4env.uw.edu/">Computing for the Environment</a></li>
+      <li><a href="https://depts.washington.edu/stsst/index.php">Certificate in Science, Technology, &amp; Society Studies</a></li>
+      <li><a href="https://csss.uw.edu/academics/phd-tracks">PhD Track in Statistics and the Social Science</a></li>
+      <li><a href="https://escience.washington.edu/data-science-learning/data-science-at-uw/grad-students/grad-options/">Data Science Options (Not for URBDP Program)</a></li>
+    </ul>
+  </li>
+  <li>Public Policy, Economics, and Politics
+    <ul>
+      <li><a href="https://evans.uw.edu/academic-programs/ph-d-concentration-in-public-policy-management/">Ph.D. Concentration in Public Policy &amp; Management</a></li>
+      <li><a href="http://evans.uw.edu/academic-programs/graduate-certificate-programs/international-development-certificate/">Certificate in International Development Policy and Management</a></li>
+      <li><a href="https://jsis.washington.edu/programs/qual/programs/qual-requirements/">Concentration in Qualitative Methods</a></li>
+    </ul>
+  </li>
+  <li>Housing and Real Estate
+    <ul>
+      <li><a href="http://realestate.washington.edu/programs/graduate-gchs-certificate/">Certificate in Housing Studies</a></li>
+      <li><a href="https://re.be.uw.edu/programs/graduate-certificates/graduate-re-certificate/">Certificate in Real Estate</a></li>
+    </ul>
+  </li>
+  <li>Funding
+    <ul>
+      <li><a href="https://depts.washington.edu/gpss/funding/travel-grants/">Graduate School Travel Grants</a></li>
+      <li><a href="https://www.ssrc.org/fellowships-and-opportunities/">Fellowships – Social Science Research Council</a></li>
+      <li><a href="http://www.aicef.org/overseas-travel-grant-application-information.html">Overseas Travel Grant/ Application Information</a></li>
+      <li><a href="https://www.earth.columbia.edu/articles/view/34#SusDev">Student Opportunities - Columbia Climate School</a></li>
+      <li><a href="https://www.epa.gov/careers/research-fellowships-and-scholarships">Research Fellowships and Scholarships - US EPA</a></li>
+      <li><a href="https://grad.uw.edu/graduate-student-funding/funding-information-for-students/fellowships/list-of-fellowships/">List of Fellowships – UW Graduate School</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="computing-and-software">Computing and Software</h4>
+
+<ul>
+  <li>Computing Resources
+    <ul>
+      <li><a href="https://itconnect.uw.edu/guides-by-topic/research/hpc/research-computing-services/">Hyak</a>, the UW’s supercomputer, has had a powerful impact on supporting research at the UW.</li>
+      <li><a href="http://depts.washington.edu/uwrcc/">Research Computing Club</a> is a free source for students, funded by the STF at the University of Washington, to use the Hyak computing, and cloud services (Azure, AWS, etc.) resources through the <a href="http://depts.washington.edu/uwrcc/getting-started-2/cloud-computing/">Cloud Credit Program</a>.</li>
+      <li>The <a href="https://csde.washington.edu/computing/">Center for Studies in Demography and Ecology (CSDE)</a> also provides computing resources.</li>
+      <li>The <a href="https://be.uw.edu/spaces/computing/hyak-resources/">College of Built Environment</a> also has one node of Hyak for CBE faculty and students.</li>
+      <li>You can get access to CBE <a href="https://be.uw.edu/spaces/computing/software-application-server/">remote computers and web servers</a> as students.</li>
+    </ul>
+  </li>
+  <li>Techniques and Software
+    <ul>
+      <li>Within the UW campus, use the <a href="https://itconnect.uw.edu/tools-services-support/networks-connectivity/uw-networks/campus-wi-fi/">Wi-Fi services</a> and connect <a href="https://itconnect.uw.edu/tools-services-support/networks-connectivity/uw-networks/campus-wi-fi/#visitors">eduroam</a> for Internet connection anywhere.</li>
+      <li>The Student Technology Loan Program allows you to borrow equipment such as laptops, cameras, and projections.</li>
+      <li>UW provides <a href="https://itconnect.uw.edu/tools-services-support/software-computers/uware/">students with software</a> such as Matlab, Overleaf, SPSS, and ArcGIS. The university or the college does not provide Adobe Suite, but you can use university computers or <a href="https://www.adobe.com/creativecloud/buy/students.html?sdid=1NZGDDHQ&amp;mv=search&amp;ef_id=CjwKCAjwyo60BhBiEiwAHmVLJYQrK87O3t6Hu8GvUxY5wAepgO8nyoRw0ggWt5cfY7dx-2HCW4pzdBoCfykQAvD_BwE:G:s&amp;s_kwcid=AL!3085!3!692228257657!e!!g!!adobe student&amp;mv=search&amp;gad_source=1&amp;gclid=CjwKCAjwyo60BhBiEiwAHmVLJYQrK87O3t6Hu8GvUxY5wAepgO8nyoRw0ggWt5cfY7dx-2HCW4pzdBoCfykQAvD_BwE">buy a student license</a>.</li>
+      <li>UW provides <a href="https://itconnect.uw.edu/tools-services-support/networks-connectivity/husky-onnet/">Husky OnNet, VPN services</a> for your travel outside of the campus.</li>
+    </ul>
+  </li>
+  <li>Printing and Plotting
+    <ul>
+      <li>UW Libraries have <a href="https://www.lib.washington.edu/services/computers">printing services</a> in multiple places across the campus.</li>
+      <li>CBE Digital Common has <a href="https://be.uw.edu/spaces/computing/digital-commons/">plotting and printing services</a>.</li>
+      <li>Architectural Hall also has a <a href="https://be.uw.edu/spaces/computing/archnet/">plotting service that technically runs 24/7 by </a>self-service. However, you will need the staff to load money to Archnet to do self-service printing.</li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+
+    <div class="footer">
+      <div class="row">
+        <div class="four columns">
+          Haoyu Yue
+        </div>
+
+        <div class="four columns">
+          yohaoyu [at] washington.edu
+        </div>
+          <!-- 
+        <div class="four columns">
+          <span onclick="window.open('https://twitter.com/HaoyuAtCities')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://www.linkedin.com/in/yohaoyu')" style="cursor: pointer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://github.com/yohaoyu')" style="cursor: pointer">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/AcZssZ2EtqybbA68awqzWkk53rxGxuiNCS0W4pbkZdc=?gv=true')" style="cursor: pointer">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </span>
+        </div>
+        -->
+        <div class="four columns">
+          <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+          <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span> visitors</span>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4P4Z3WQ96"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-J4P4Z3WQ96');
+  </script>
+
+  <!-- do not remove -->
+  <!--<span id="62cd7b7da1aff3196fdc26b60e396df9"></span>-->
+
+  <climate-clock />
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById('toc-toggle');
+    const tocBox = document.getElementById('markdown-toc');
+
+    toggleBtn.addEventListener('click', function () {
+      if (tocBox.style.display === 'block') {
+        tocBox.style.display = 'none';
+      } else {
+        tocBox.style.display = 'block';
+      }
+    });
+    tocBox.addEventListener('mouseleave', function () {
+      tocBox.style.display = 'none';
+    });
+  });
+  </script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
