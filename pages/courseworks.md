@@ -11,7 +11,7 @@ subtitle: A Combination of Urban Planning, Policy, Climate, Energy, Statistics, 
 #### Planning, Policy, and Institutions
 
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> URBAN 561 Urban Economics and Public Policy 
-  - jdwei
+  - Jewel
 
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> [URBAN 591 Research Design in Urban Science](https://researchdesign.be.uw.edu)
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> [URBAN 592 Advanced Planning Theory](https://home.foreveroverhead.cloud/udp592_syllabus.pdf)
