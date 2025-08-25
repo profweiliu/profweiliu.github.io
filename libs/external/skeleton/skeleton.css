@@ -121,13 +121,13 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
-  font-weight: 300;
-  letter-spacing: -.005rem;
+  font-size: 1.6rem; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.8;
+  font-weight: 200;
+  letter-spacing: 0rem;
   font-family:  "Optima", 'Linux Biolinum', "Roboto Slab", "Open Sans",  "Helvetica Neue",  "Palatino" ,"Microsoft Yahei", Helvetica, "Raleway", -apple-system, "Commissioner" ;
-  /* font-family: ,system-ui, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  color: #343434; }
+  /* 343434 font-family: ,system-ui, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  color: #2f2f2f; }
 
 
 /* Typography
