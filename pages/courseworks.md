@@ -11,8 +11,6 @@ subtitle: A Combination of Urban Planning, Policy, Climate, Energy, Statistics, 
 #### Planning, Policy, and Institutions
 
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> URBAN 561 Urban Economics and Public Policy 
-  - Jewel
-
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> [URBAN 591 Research Design in Urban Science](https://researchdesign.be.uw.edu)
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> [URBAN 592 Advanced Planning Theory](https://home.foreveroverhead.cloud/udp592_syllabus.pdf)
 - [POL S 582 Institutional Analysis](http://faculty.washington.edu/swhiting/582spr17syl1a.pdf) 
@@ -21,7 +19,6 @@ subtitle: A Combination of Urban Planning, Policy, Climate, Energy, Statistics, 
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> PPM 508 Public Policy Processes 
 - <i class="fa fa-square-o" aria-hidden="true"></i> PPM 510 Public Policy Analysis 
 - PPM 514 Organizations, Management, and Theory
-- R E 550 Real Estate Development
 
 #### Energy, Climate, and Infrastructure
 
@@ -29,7 +26,7 @@ subtitle: A Combination of Urban Planning, Policy, Climate, Energy, Statistics, 
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> ATM S 587 Fundamentals of Climate Change
 - ATM S 588 The Global Carbon Cycle and Climate 
 - CHEM E 550 Solar Energy and Photovoltaics
-- E E 553 Power System Economics
+- <i class="fa fa-square-o" aria-hidden="true"></i> E E 553 Power System Economics
 - G H 538 Understanding and Managing the Health Risks of Climate Change
 - MSE 539 Renewable Energy: Photovoltaics
 - PUBPOL 594 Economic Approaches to Environmental Management 
@@ -40,7 +37,6 @@ subtitle: A Combination of Urban Planning, Policy, Climate, Energy, Statistics, 
 
 - CS&SS 510 Maximum Likelihood Methods for the Social Sciences 
 - CS&SS 512 Time Series and Panel Data for the Social Sciences
-- <i class="fa fa-check-square-o" aria-hidden="true"></i> [CS&SS 567 Statistical Analysis of Social Networks](https://thmccormick.github.io/teaching/)
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> STAT 502 Design and Analysis of Experiments
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> STAT 504 Applied Regression
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> STAT 512 Statistical Inference 1
@@ -49,17 +45,18 @@ subtitle: A Combination of Urban Planning, Policy, Climate, Energy, Statistics, 
 - STAT 535 Statistical Learning
 - STAT 536 Analysis of Categorical and Count Data
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> STAT 554 Statistical Methods for Spatial Data
-- <i class="fa fa-check-square-o" aria-hidden="true"></i> STAT 560 Hierarchical Modeling for the Social Sciences
-- STAT 564 Bayesian Statistics for the Social Science
-- <i class="fa fa-square-o" aria-hidden="true"></i> STAT 566 Causal Modeling 
-- <i class="fa fa-square-o" aria-hidden="true"></i> STAT 570 Advanced Regression Methods for Independent Data
-- <i class="fa fa-square-o" aria-hidden="true"></i> STAT 571 Advanced Regression Methods for Dependent Data
+- <i class="fa fa-check-square-o" aria-hidden="true"></i> [STAT 560 Hierarchical Modeling for the Social Sciences](https://stat.uw.edu/academics/course-catalog/stat-560)
+- [STAT 564 Bayesian Statistics for the Social Science](https://stat.uw.edu/academics/course-catalog/stat-564)
+- <i class="fa fa-square-o" aria-hidden="true"></i> [STAT 566 Causal Modeling](https://stat.uw.edu/academics/course-catalog/stat-566) 
+- <i class="fa fa-check-square-o" aria-hidden="true"></i> [STAT 567 Statistical Analysis of Social Networks](https://thmccormick.github.io/teaching/)
+- <i class="fa fa-check-square-o" aria-hidden="true"></i> [STAT 570 Advanced Regression Methods for Independent Data](https://stat.uw.edu/academics/course-catalog/stat-570)
+- <i class="fa fa-square-o" aria-hidden="true"></i> [STAT 571 Advanced Regression Methods for Dependent Data](https://stat.uw.edu/academics/course-catalog/stat-571)
 
 #### Computer Science and Artificial Intelligence
 
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> CSE 414 Database Systems
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> CSE 512 Data Visualization
-- <i class="fa fa-check-square-o" aria-hidden="true"></i>[CSE 517 Natural Language Processing (Large Language Models)](https://safe-fernleaf-26d.notion.site/Winter-24-CSE-447-517-Natural-Language-Processing-4142333a001143d2be5ecff1a535c4ab)
+- <i class="fa fa-check-square-o" aria-hidden="true"></i> [CSE 517 Natural Language Processing (Large Language Models)](https://safe-fernleaf-26d.notion.site/Winter-24-CSE-447-517-Natural-Language-Processing-4142333a001143d2be5ecff1a535c4ab)
 - CSE 542 Reinforcement Learning
 - <i class="fa fa-check-square-o" aria-hidden="true"></i> CSE 546 Machine Learning
 - CSE 547 Machine Learning for Big Data
