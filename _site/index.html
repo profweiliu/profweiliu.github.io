@@ -95,7 +95,8 @@
               { src: '/assets/profile-pics/photo2.png', weight: 8 },
               { src: '/assets/profile-pics/photo3.jpg', weight: 0.1 },
               { src: '/assets/profile-pics/photo4.jpg', weight: 0.1 },
-              { src: '/assets/profile-pics/photo5.jpg', weight: 5 }            ];
+              { src: '/assets/profile-pics/photo5.jpg', weight: 5 },
+              { src: '/assets/profile-pics/photo6.png', weight: 6 }             ];
           
             function weightedRandom(pics) {
               const totalWeight = pics.reduce((sum, pic) => sum + pic.weight, 0);
@@ -152,6 +153,7 @@
           <li class="navbar-item"><a class="navbar-link" href=/index.html#news>News</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#projects>Projects</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#teaching>Teaching</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/notes>Notes</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#resume>Vita</a></li>
         </ul>
       </div>
@@ -193,7 +195,7 @@
   <h3>News</h3>
   <!--<i> * Scroll for more </i>-->
   <UL style="list-style-type: none; padding: 1px; padding-left: 0rem !important; margin-top: 0px; overflow-y: scroll; height:170px;">
-    <li><b>[30/06/25]</b> Passed <a href="https://stat.uw.edu/academics/graduate/programs/masters/exams/theory">M.S. statistical theory exam</a> from the Department of Statistics. </li>
+    <li><b>[30/06/25]</b> Passed <a href="https://stat.uw.edu/academics/graduate/programs/masters/exams/theory">statistical theory exam</a> from the Department of Statistics. </li>
     <li><b>[24/06/25]</b> Thanks <a href="https://www.cei.washington.edu">Clean Energy Insitute</a> for supporting my energy work through its graduate fellowship. </li>
     <li><b>[07/05/25]</b> Presented our work at Microsoft AI & Society Research Talk Series. </li>
     <li><b>[12/08/24]</b> Excited to be <a href="https://grad.uw.edu/haoyu-yue/">highlighted</a> by the Graduate School of the University of Washington. </li>
@@ -550,7 +552,7 @@
 
   <b>Course Website:</b> <br>
   <a href="/data-analytics-visualization">RE 519 Data Analytics and Visualization</a> <br>
-  <a href="/quantitative-methods">URBAN 520 Quantitative Methods</a> (due to unforeseen circumstances, cannot teach it after developing the contents)
+  <!--<a href="/quantitative-methods">URBAN 520 Quantitative Methods</a> (due to unforeseen circumstances, cannot teach it after developing the contents)-->
 
 
 </div>
@@ -702,6 +704,57 @@
     });
   });
   </script>
+
+  <script type="module">
+  const { default: Chatbot } = await import("https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js")
+
+  Chatbot.init({
+    chatflowid: "68b8eb40-9288-4492-be48-5be00a0d9f80",
+    apiHost: "https://cloud.flowiseai.com",
+    theme: {
+      button: {
+        backgroundColor: "#4B2E83",   // UW 紫
+        right: 30,                    // 按钮离右侧距离(px)
+        bottom: 50,                   // 离底部距离(px)
+        size: "medium"                 // small | medium | large
+      },
+      chatWindow: {
+        title: "Agent Haoyu",
+        titleColor: "#FFFFFF",
+        backgroundColor: "#F8F8FC",
+        fontSize: 15,
+        welcomeMessage: 'Hello! This is Agent Haoyu. How can I help you? But please note AI can make mistakes.',
+        poweredByTextColor: "#F8F8FC",
+        botMessage: {
+          backgroundColor: "#fbfaff", // bot气泡背景
+          textColor: "#000000"
+        },
+        userMessage: {
+          backgroundColor: "#4B2E83", // 用户气泡背景
+          textColor: "#FFFFFF"
+        },
+        textInput: {
+          placeholder: 'Type your question',
+          backgroundColor: '#ffffff',
+          textColor: '#303235',
+          sendButtonColor: '#4B2E83',
+          maxChars: 100,
+          maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 100 characters.',
+        },
+        footer: {
+          textColor: "transparent",
+          backgroundColor: "#FFFFFF",
+        }
+      }
+      
+      ,
+       customCSS: `
+        .chatbot-container * {
+          font-family: 'Optima', 'Avenir', 'Helvetica Neue', sans-serif !important;
+        }`
+    }
+  })
+</script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

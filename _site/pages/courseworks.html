@@ -95,7 +95,8 @@
               { src: '/assets/profile-pics/photo2.png', weight: 8 },
               { src: '/assets/profile-pics/photo3.jpg', weight: 0.1 },
               { src: '/assets/profile-pics/photo4.jpg', weight: 0.1 },
-              { src: '/assets/profile-pics/photo5.jpg', weight: 5 }            ];
+              { src: '/assets/profile-pics/photo5.jpg', weight: 5 },
+              { src: '/assets/profile-pics/photo6.png', weight: 6 }             ];
           
             function weightedRandom(pics) {
               const totalWeight = pics.reduce((sum, pic) => sum + pic.weight, 0);
@@ -152,6 +153,7 @@
           <li class="navbar-item"><a class="navbar-link" href=/index.html#news>News</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#projects>Projects</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#teaching>Teaching</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/notes>Notes</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#resume>Vita</a></li>
         </ul>
       </div>
@@ -402,6 +404,57 @@
     });
   });
   </script>
+
+  <script type="module">
+  const { default: Chatbot } = await import("https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js")
+
+  Chatbot.init({
+    chatflowid: "68b8eb40-9288-4492-be48-5be00a0d9f80",
+    apiHost: "https://cloud.flowiseai.com",
+    theme: {
+      button: {
+        backgroundColor: "#4B2E83",   // UW 紫
+        right: 30,                    // 按钮离右侧距离(px)
+        bottom: 50,                   // 离底部距离(px)
+        size: "medium"                 // small | medium | large
+      },
+      chatWindow: {
+        title: "Agent Haoyu",
+        titleColor: "#FFFFFF",
+        backgroundColor: "#F8F8FC",
+        fontSize: 15,
+        welcomeMessage: 'Hello! This is Agent Haoyu. How can I help you? But please note AI can make mistakes.',
+        poweredByTextColor: "#F8F8FC",
+        botMessage: {
+          backgroundColor: "#fbfaff", // bot气泡背景
+          textColor: "#000000"
+        },
+        userMessage: {
+          backgroundColor: "#4B2E83", // 用户气泡背景
+          textColor: "#FFFFFF"
+        },
+        textInput: {
+          placeholder: 'Type your question',
+          backgroundColor: '#ffffff',
+          textColor: '#303235',
+          sendButtonColor: '#4B2E83',
+          maxChars: 100,
+          maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 100 characters.',
+        },
+        footer: {
+          textColor: "transparent",
+          backgroundColor: "#FFFFFF",
+        }
+      }
+      
+      ,
+       customCSS: `
+        .chatbot-container * {
+          font-family: 'Optima', 'Avenir', 'Helvetica Neue', sans-serif !important;
+        }`
+    }
+  })
+</script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
