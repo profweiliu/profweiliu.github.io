@@ -3,17 +3,17 @@ projects:
     subtitle: "An Investigation of Climate Investment Mismatch"
     thumbnail: "assets/projects/2023-climate-investment-mismatch/thumbnail.png"
     url: ""
-    selected: y
+    selected: N
   - title: "Keeping it on the Tracks"
     subtitle: "High-speed Rail Success and Lession Learned"
     thumbnail: "assets/projects/2023-high-speed-rail-success/thumbnail.png"
     url: ""
-    selected: y
+    selected: N
   - title: "Vulnerability in the Pandemic"
     subtitle: "Social Vulnerability & Resillence during COVID-19"
     thumbnail: "assets/projects/2022-resillience-in-pandemic/thumbnail.png"
     url: ""
-    selected: y
+    selected: N
 
   - title: "Happiness During the COVID-19"
     subtitle: "An Exploration of Global Happiness Index"
