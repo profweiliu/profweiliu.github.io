@@ -124,16 +124,17 @@ title: Home
 -->
 
 <!-- ========== PROJECTS ========== -->
+ <!--
 <div class="docs-section" id="projects">
   <h3>Projects</h3>
 
-<!-- <ul class="tab-nav">
+<ul class="tab-nav">
     <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
     <li><div class="button" data-ref="#projects-all">All</div></li>
   </ul> 
 
   <div class="tab-content">
-    <div class="tab-pane active" id="projects-selected">-->
+    <div class="tab-pane active" id="projects-selected">
       {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
       {% for project in selected_projects %}
         {% assign index_modulo = forloop.index0 | modulo:3 %}
@@ -163,6 +164,7 @@ title: Home
         {% endif %}
       {% endfor %}
     </div> 
+  -->
 
    <!-- <div class="tab-pane" id="projects-all">
       {% for project in site.data.projects.projects %}
@@ -203,11 +205,7 @@ title: Home
   <h3>Teaching</h3>
  
   <p> 
-    I organize the Ph.D. colloquium, where we organized <a href="{{ site.baseurl }}/pages/resources">a list of resource</a> for students in our Ph.D. program. 
-    I also advise <a href="http://uwsolar.be.uw.edu">UW Solar</a> and some student teams from the <a href="https://foster.uw.edu/">Foster School of Business</a> and <a href="https://gix.uw.edu/">Global Innovation Exchange (GIX)</a> on their capstone projects.
-   
-    My <a href="{{ site.baseurl }}/pages/courseworks">coursework plan</a> (<a href="https://haoyuatuw.notion.site/coursework">full list</a>) combine urban planning, public policy, climate and energy, statsitics, data science, and AI + society at the University of Washington. 
-    You can also refer to the <a href="https://uil.be.uw.edu/education/">programs and courses recommended by the Urban Infrastructure Lab</a>.
+    I teach courses within the Division of Planning, Landscape Architecture, & Design and mentor graduate research students housed in the Insititute for Qualities Communities.
   </p>
 
   <b>Course Website:</b> <br>
