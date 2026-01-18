@@ -161,12 +161,12 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #4b2e83; 
+  color: #841617; 
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
 a:hover {
-  color: #4b2e83; 
+  color: #841617; 
   text-decoration: underline;
 }
 
@@ -214,8 +214,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #4b2e83;
-  border-color: #4b2e83; }
+  background-color: #841617;
+  border-color: #841617; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -227,8 +227,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #4b2e83;
-  border-color: #4b2e83; }
+  background-color: #841617;
+  border-color: #841617; }
 
 
 /* Forms
@@ -274,7 +274,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #4b2e83;
+  border: 1px solid #841617;
   outline: 0; }
 label,
 legend {
@@ -448,11 +448,11 @@ there.
 
 /* Text selection (highlight) style */
 ::selection {
-  background: #4b2e83;   /* 黑色背景 */
+  background: #841617;   /* 黑色背景 */
   color: #ffffff;        /* 白色文字 */
 }
 
 ::-moz-selection {
-  background: #4b2e83;   /* Firefox */
+  background: #841617;   /* Firefox */
   color: #ffffff;
 }
