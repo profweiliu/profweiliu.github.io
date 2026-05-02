@@ -109,7 +109,7 @@ function toDisplayTime(value) {
 
 function formatTime(event) {
   if (!event.start && !event.end) return "All day";
-  if (event.start && event.end) return `${toDisplayTime(event.start)}-${toDisplayTime(event.end)}`;
+  if (event.start && event.end) return `${toDisplayTime(event.start)} - ${toDisplayTime(event.end)}`;
   return toDisplayTime(event.start || event.end);
 }
 
@@ -195,7 +195,7 @@ function renderCalendar() {
       dayEvents.forEach((event) => {
         const pill = eventTemplate.content.firstElementChild.cloneNode(true);
         pill.dataset.type = event.type;
-        pill.textContent = `${formatTime(event)} ${event.title}`;
+        pill.textContent = formatTime(event);
         pill.title = `${event.title} - ${formatDate(event.date)} - ${formatTime(event)}`;
         stack.append(pill);
       });

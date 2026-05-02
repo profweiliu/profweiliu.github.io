@@ -34,7 +34,8 @@ button {
 }
 
 .app-shell {
-  width: min(1540px, 100%);
+  width: clamp(1200px, 92vw, 1440px);
+  max-width: calc(100vw - 32px);
   margin: 0 auto;
   padding: 24px;
 }
