@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prof. Wei Liu Fall 2026 Calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="semester-hero" aria-labelledby="page-title">
+        <h1 id="page-title">Prof. Wei Liu Fall 2026 Calendar</h1>
+      </section>
+
+      <section class="calendar-layout">
+        <section class="calendar-panel" aria-label="Continuous semester calendar">
+          <div class="calendar-heading">
+            <h2>Schedule</h2>
+          </div>
+          <div class="weekday-row" aria-hidden="true">
+            <span></span>
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+            <span>Sun</span>
+          </div>
+          <div class="semester-grid" id="calendarGrid" aria-live="polite"></div>
+        </section>
+      </section>
+    </main>
+
+    <template id="eventTemplate">
+      <button class="event-pill" type="button"></button>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
