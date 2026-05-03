@@ -107,9 +107,23 @@ function toDisplayTime(value) {
   return `${displayHour}:${minute} ${suffix}`;
 }
 
+function timeParts(value) {
+  const [hourText, minute] = value.split(":");
+  const hour = Number(hourText);
+  return {
+    time: `${hour % 12 || 12}:${minute}`,
+    suffix: hour >= 12 ? "PM" : "AM"
+  };
+}
+
 function formatTime(event) {
   if (!event.start && !event.end) return "All day";
-  if (event.start && event.end) return `${toDisplayTime(event.start)} - ${toDisplayTime(event.end)}`;
+  if (event.start && event.end) {
+    const start = timeParts(event.start);
+    const end = timeParts(event.end);
+    const startText = start.suffix === end.suffix ? start.time : `${start.time} ${start.suffix}`;
+    return `${startText} - ${end.time} ${end.suffix}`;
+  }
   return toDisplayTime(event.start || event.end);
 }
 
