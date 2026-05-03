@@ -182,6 +182,10 @@ h1 {
   background: #fff6e7;
 }
 
+.day-cell.is-weekend {
+  background: #f4efe6;
+}
+
 .date-number {
   display: flex;
   justify-content: space-between;

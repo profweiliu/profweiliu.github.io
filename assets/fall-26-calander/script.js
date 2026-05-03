@@ -12,9 +12,7 @@ const hatchDates = new Set([
   "2026-10-09",
   "2026-11-25",
   "2026-11-26",
-  "2026-11-27",
-  "2026-11-28",
-  "2026-11-29"
+  "2026-11-27"
 ]);
 const dayNotes = {
   "2026-09-07": "Labor Day",
@@ -166,6 +164,10 @@ function renderCalendar() {
 
       if (currentDate < semesterStart || currentDate > semesterEnd) {
         cell.classList.add("is-muted");
+      }
+
+      if (dayOffset >= 5) {
+        cell.classList.add("is-weekend");
       }
 
       if (key === "2026-08-24") {
