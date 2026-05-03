@@ -143,7 +143,7 @@ function renderCalendar() {
     weekLabel.className = "week-label";
 
     const label = document.createElement("strong");
-    label.textContent = `Week ${week}`;
+    label.textContent = week === 17 ? "Final Exams Week" : `Week ${week}`;
     weekLabel.append(label);
 
     if (week === 16) {
